@@ -1,2 +1,5 @@
 # Shell-Scripts
-平时常用的脚本
+
+## addip
+
+ Please enter 'bash addip --help' to receive help info.
