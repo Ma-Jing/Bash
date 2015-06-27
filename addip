@@ -84,7 +84,6 @@ do
     shift
 done
 
-#eth0_num=`ip a s dev eth0 scope global | awk 'END {if($NF!~/eth0$/) {split($NF,a,":");print a[2]} else print 0}'`
 eth0_num=`ifconfig | grep ^eth0 | awk 'END {if($1!~/eth0$/) {split($1,a,":");print a[2]} else print 0}'`
 start_eth0_num=$(($eth0_num+1))
 end_eth0_num=`expr $eth0_num + $count`
